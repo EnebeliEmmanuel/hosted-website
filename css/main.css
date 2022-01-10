@@ -176,7 +176,6 @@ main {
     border: 0.16vw solid #ffec81;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 10px 10px 7px transparent;
     opacity: 0.2rem; }
   .about-info .bio {
     grid-area: bio; }
