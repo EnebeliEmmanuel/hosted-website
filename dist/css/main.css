@@ -4,13 +4,16 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  display: grid; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    display: grid;
+    border: none; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -124,7 +127,8 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    margin-top: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -172,19 +176,20 @@ main {
     border: 0.16vw solid #ffec81;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 10px 10px 5px #242424; }
+    box-shadow: 10px 10px 7px transparent;
+    opacity: 0.2rem; }
   .about-info .bio {
-    grid-area: bio;
-    box-shadow: 10px 10px 5px #242424; }
+    grid-area: bio; }
   .about-info .job-1 {
     grid-area: job1;
-    box-shadow: 10px 10px 5px #242424; }
+    box-shadow: 10px 10px 5px #333333;
+    padding: 0.5rem; }
   .about-info .job-2 {
     grid-area: job2;
-    box-shadow: 10px 10px 5px #242424; }
+    box-shadow: 10px 10px 5px #333333; }
   .about-info .job-3 {
     grid-area: job3;
-    box-shadow: 10px 10px 5px #242424; }
+    box-shadow: 10px 10px 5px #333333; }
   .about-info .bio-image {
     width: 150px;
     height: 150px; }
@@ -212,13 +217,12 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 1rem;
+    font-size: 0.7rem;
     border: 3px white solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #ffec81;
       color: #000; }
       .boxes div:hover span {
@@ -227,7 +231,7 @@ main {
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
+  border: none;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #ffec81;
@@ -292,6 +296,10 @@ main {
   opacity: 1;
   visibility: visible; }
 
+.animation {
+  animation: pulse 1s linear infinite both; }
+
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -326,8 +334,8 @@ main {
       background: url("../img/portrait_small.jpeg");
       margin-top: 5.13vw;
       margin-left: 5.34vw;
-      width: 20.72vw;
-      height: 30.72vh;
+      width: 17.72vw;
+      height: 15.72vh;
       border: 0.16vw solid #ffec81;
       border-radius: 50%; }
   .about-info {

@@ -6,6 +6,7 @@
   top: 35px;
   cursor: pointer;
   @include easeOut;
+  display: grid;
 
   .btn-line {
     width: 28px;
@@ -13,6 +14,8 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+    display: grid;
+    border: none;
   }
 
   // Rotate Into X With Menu Lines
