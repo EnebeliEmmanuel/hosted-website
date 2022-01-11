@@ -22,14 +22,14 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400;
-
+    margin-top: 2rem;
     &.lg-heading {
         font-size: 6rem;
         margin-top: 6rem;
     }
 
     &.sm-heading {
-        margin-bottom: 2rem;
+        margin-top: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color,2), 0.5);
     }
