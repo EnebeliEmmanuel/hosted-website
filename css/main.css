@@ -123,7 +123,8 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 2rem; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -132,7 +133,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
