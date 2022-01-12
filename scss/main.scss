@@ -1,6 +1,24 @@
 @import 'config';
 @import 'menu';
 
+:root {
+    /*Dark Blue (Dark Mode Elements):*/
+    --clr-primary--300: hsl(209, 23%, 22%);
+    /*Very Dark Blue (Dark Mode Background)*/
+    --clr-primary--500: hsl(207, 26%, 17%);
+    /*Very Dark Blue (Light Mode Text)*/
+    --clr-primary--700: #111517;
+    /*White (Dark Mode Text & Light Mode Elements): */
+    --clr-neutral--100: #ffffff;
+    /*Very Light Gray (Light Mode Background):*/
+    --clr-neutral--300: hsl(0, 0%, 98%);
+    /*Dark Gray (Light Mode Input):*/
+    --clr-neutral--500: hsl(0, 0%, 52%);
+    --ff: 'Nunito Sans', sans-serif;
+    --fs-homepage: 14px;
+    --fs-detail: 16px;
+    --br: 0.5em; }
+
 * {
     box-sizing: border-box;
 }
@@ -29,9 +47,10 @@ h3 {
     }
 
     &.sm-heading {
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color,2), 0.5);
+        
     }
 }
 
@@ -105,20 +124,29 @@ main {
     
     .job-1 {
         grid-area: job1;
-        box-shadow: 10px 10px 5px #333333;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
         padding: 0.5rem;
     }
     
     
     .job-2 {
         grid-area: job2;
-        box-shadow: 10px 10px 5px #333333;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
     }
     
     
     .job-3 {
         grid-area: job3;
-        box-shadow: 10px 10px 5px #333333;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
     }
     
     .bio-image {
@@ -268,16 +296,23 @@ main {
   
   
 
-  .animation {
-    animation: pulse 1s linear infinite both;
-  }
  
 /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
 @mixin prefers-reduced-motion{
-    @media (prefers-reduced-motion) {
-      .animation {
-        animation-name: dissolve;
-      }
+    /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
     }
+  
+    *,
+  *::before,
+  *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
     }
 @import 'mobile';

@@ -17,11 +17,17 @@
   main {
     align-items: center;
     text-align: center;
+    &.lg-heading {
+      font-size: 6rem;
+      margin-top: 6rem;
+  }
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
+  &.sm-heading {
+      margin-top: 1rem;
+      padding: 0.2rem 1rem;
+      background: rgba(lighten($primary-color,2), 0.5);
+      
+  }
   }
 
   ul.menu-nav,
@@ -49,7 +55,7 @@
       background: url('../img/portrait_small.jpeg');
       margin-top: 5.13vw;
       margin-left: 5.34vw;
-      width: 17.72vw;
+      width: 23.72vw;
       height: 15.72vh;
       border: 0.16vw solid $secondary-color;
       border-radius: 50%;
@@ -81,10 +87,19 @@
       margin-top: 10vh;
     }
 
-    .lg-heading {
-      margin-top:1rem;
-      font-size: 5rem;
-    }
+    &.lg-heading {
+      font-size: 6rem;
+      margin-top: 6rem;
+  }
+
+  &.sm-heading {
+      margin-top: 1rem;
+      padding: 0.2rem 1rem;
+      background: rgba(lighten($primary-color,2), 0.5);
+      
+  }
+
+  
   }
 
   .projects {
