@@ -95,6 +95,24 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+:root {
+  /*Dark Blue (Dark Mode Elements):*/
+  --clr-primary--300: hsl(209, 23%, 22%);
+  /*Very Dark Blue (Dark Mode Background)*/
+  --clr-primary--500: hsl(207, 26%, 17%);
+  /*Very Dark Blue (Light Mode Text)*/
+  --clr-primary--700: #111517;
+  /*White (Dark Mode Text & Light Mode Elements): */
+  --clr-neutral--100: #ffffff;
+  /*Very Light Gray (Light Mode Background):*/
+  --clr-neutral--300: hsl(0, 0%, 98%);
+  /*Dark Gray (Light Mode Input):*/
+  --clr-neutral--500: hsl(0, 0%, 52%);
+  --ff: 'Nunito Sans', sans-serif;
+  --fs-homepage: 14px;
+  --fs-detail: 16px;
+  --br: 0.5em; }
+
 * {
   box-sizing: border-box; }
 
@@ -133,7 +151,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
@@ -182,14 +200,23 @@ main {
     grid-area: bio; }
   .about-info .job-1 {
     grid-area: job1;
-    box-shadow: 10px 10px 5px #333333;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    cursor: pointer;
     padding: 0.5rem; }
   .about-info .job-2 {
     grid-area: job2;
-    box-shadow: 10px 10px 5px #333333; }
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    cursor: pointer; }
   .about-info .job-3 {
     grid-area: job3;
-    box-shadow: 10px 10px 5px #333333; }
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.36);
+    cursor: pointer; }
   .about-info .bio-image {
     width: 150px;
     height: 150px; }
@@ -296,9 +323,6 @@ main {
   opacity: 1;
   visibility: visible; }
 
-.animation {
-  animation: pulse 1s linear infinite both; }
-
 /* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
 @media screen and (min-width: 1171px) {
   .projects {
@@ -312,9 +336,13 @@ main {
   main {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
+    main.lg-heading {
+      font-size: 6rem;
+      margin-top: 6rem; }
+    main.sm-heading {
+      margin-top: 1rem;
+      padding: 0.2rem 1rem;
+      background: rgba(73, 73, 73, 0.5); }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -334,7 +362,7 @@ main {
       background: url("../img/portrait_small.jpeg");
       margin-top: 5.13vw;
       margin-left: 5.34vw;
-      width: 17.72vw;
+      width: 23.72vw;
       height: 15.72vh;
       border: 0.16vw solid #ffec81;
       border-radius: 50%; }
@@ -349,8 +377,12 @@ main {
     padding: 2rem; }
     main #home h1 {
       margin-top: 10vh; }
-    main .lg-heading {
+    main.lg-heading {
+      font-size: 6rem;
+      margin-top: 6rem; }
+    main.sm-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      padding: 0.2rem 1rem;
+      background: rgba(73, 73, 73, 0.5); }
   .projects {
     grid-template-columns: 1fr; } }
