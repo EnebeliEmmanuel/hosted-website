@@ -51,27 +51,96 @@
       <h2 class="sm-heading">
         This will be a means for you to reach me...
       </h2>
-      <div class="boxes">
-       <div>
-           <span class="text-secondary">Email:
+      <section id="contact">
+  
+      
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form" style="position: relative; right: 40px;">
+             
+            <div class="form-group"  style="position: relative;  bottom: 37px;">
+                <label id="name-label" for="name" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group" style="position: relative;  bottom: 50px;">
+                <label id="email-label" for="email" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+      
+           
+      
+              <div class="form-group" style="position: relative; bottom: 79px;">
+                <p style="position: relative; top: 12px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >If you have a message for me</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your Message  here..."
+                ></textarea>
+              </div>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" style="position: relative;  bottom: 88px; ">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x" style="position: relative; right: 5px;"><span class="contact-text place" style="font-size: 15px;position: relative; right: 29px;">Warri, Delta state</span></i></li>
 
-           </span>iemmaenebeli@gmail.com
-       </div>
-       <div>
-        <span class="text-secondary">LINKEDLN:
-
-        </span>https://www.linkedin.com/in/emmanuel-enebeli-07893b1a2/
-    </div>
-    <div>
-        <span class="text-secondary">Address
-
-        </span>No.6 Ben-adohor-close
-    </div>
-      </div>
-    </main>
-    <footer id="main-footer">
-      Copyright &copy; 2022
-    </footer>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email" style="font-size: 15px; position: relative; right: 29px;">iemmaenebeli@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fab fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fab fa-codepen" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fab fa-twitter fa-1x" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                  <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+        </div>
+        
+      </section>  
+      <footer id="main-footer">
+        Copyright &copy; 2022
+      </footer>
+        
     <script src="js/main.js"></script>
 </body>
 </html>
